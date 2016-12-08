@@ -58,11 +58,11 @@ class YFile : YStream {
 	}
 
 	void writeExact(const void* buffer, size_t size) {
-		this.file.write(cast(const ubyte[])buffer[0 .. size]);
+		this.file.write(cast(const char[]) buffer[0 .. size]);
 	}
 
 	size_t write(const(ubyte)[] buffer) {
-		this.file.write(buffer);
+		this.file.write(cast(const char[]) buffer);
 		return buffer.length;
 	}
 
