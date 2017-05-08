@@ -32,6 +32,8 @@ main
 *.lib
 *.o
 *.exe
+yaml
+yaml-test-library
 
 # Packages #
 ############
